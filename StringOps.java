@@ -22,7 +22,7 @@ public class StringOps {
     //////                                               ///////
     ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
-        String string = "yellow";
+        String string = "One two tHRee world";
         System.out.println(capVowelsLowRest(string));
 
     }
@@ -39,7 +39,7 @@ public class StringOps {
                 asci = asci - 32;
                 newC = (char) (asci);
             } else {
-                if ((newC >= 'A') && (newC <= 'Z')) {
+                if (((newC >= 'A') && (newC <= 'Z')) && (newC != 'O' && newC != 'A' && newC != 'I' && newC != 'E' && newC != 'U')){
                     asci = (int) (newC);
                     asci = asci + 32;
                     newC = (char) (asci);
