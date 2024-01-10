@@ -22,12 +22,32 @@ public class StringOps {
     //////                                               ///////
     ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
-        
+        String string = "yellow";
+        System.out.println(capVowelsLowRest(string));
+
     }
 
-    public static String capVowelsLowRest (String string) {
+    public static String capVowelsLowRest(String string) {
         // Write your code here:
-        return "";
+        String newS = "";
+        char newC;
+        int asci;
+        for (int i = 0; i < string.length(); i++) {
+            newC = string.charAt(i);
+            if (newC == 'a' || newC == 'e' || newC == 'i' || newC == 'o' || newC == 'u') {
+                asci = (int) (newC);
+                asci = asci - 32;
+                newC = (char) (asci);
+            } else {
+                if ((newC >= 'A') && (newC <= 'Z')) {
+                    asci = (int) (newC);
+                    asci = asci + 32;
+                    newC = (char) (asci);
+                }
+            }
+            newS = newS + newC;
+        }
+        return newS;
     }
 
     public static String camelCase (String string) {
