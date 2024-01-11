@@ -5,7 +5,7 @@ public class ArrayOps {
         //System.out.println(findMissingInt(array)); //ex1
         //System.out.println(secondMaxValue(array)); //ex2
         //System.out.println(containsTheSameElements(array1, array2)); //ex3
-        System.out.println(isSorted(array));
+        //System.out.println(isSorted(array)); //ex4
 
     }
     
