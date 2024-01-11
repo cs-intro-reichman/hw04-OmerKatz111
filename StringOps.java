@@ -22,13 +22,13 @@ public class StringOps {
     //////                                               ///////
     ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
-       // String string = "Hello world";
-       //  char chr = 'l';
+       String string = "Hello world";
+       char chr = 'l';
        //int [] array = {1, 2, 3, 4};
         //System.out.println(array);
         //System.out.println(capVowelsLowRest(string)); //ex1
         //System.out.println(camelCase(string)); //ex2
-      // int [] arr = System.out.println(allIndexOf(string, chr));
+      System.out.println(allIndexOf(string, chr));
        //for(int z = 0; z < arr.length; z++){
      //      System.out.println(z);
      //  }
@@ -111,6 +111,7 @@ public class StringOps {
         char check;
         char insert;
         int size = 0;
+        int k = 0;
         for(int i = 0; i < string.length(); i++){
             check = string.charAt(i);
             if(check == chr){
@@ -118,7 +119,7 @@ public class StringOps {
             }
         }
        int[] array = new int[size];
-        while(k <= size) {
+        while(k < size) {
             for (int j = 0; j < string.length(); j++) {
                 insert = string.charAt(j);
                 if (insert == chr) {
