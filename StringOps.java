@@ -118,12 +118,13 @@ public class StringOps {
             }
         }
        int[] array = new int[size];
-        for(int k = 0; k < size; k++) {
+        while(k <= size) {
             for (int j = 0; j < string.length(); j++) {
                 insert = string.charAt(j);
                 if (insert == chr) {
                     //System.out.print(j);
                     array[k] = j;
+                    k++;
                 }
             }
         }
